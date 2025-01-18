@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Eight from "../assets/gallery/eight.jpeg"
+import Tweleve from "../assets/gallery/tweleve.jpeg"
+import Nine from "../assets/gallery/nine.jpeg"
+import Two from "../assets/gallery/two.jpeg"
+import One from "../assets/gallery/one.jpeg"
+import Ten from "../assets/gallery/ten.jpeg"
+import Eleven from "../assets/gallery/eleven.jpeg"
+import Three from "../assets/gallery/three.jpeg"
+import Seven from "../assets/gallery/seven.jpeg"
+import Five from "../assets/gallery/five.jpeg"
+import Fifteen from "../assets/gallery/fifteen.jpeg"
+
+---
+
+<Layout>
+<div class="flex items-center gap-4 ml-5 mt-5 justify-center">
+  <div class="h-px w-20 bg-orange-800"></div>
+  <span class="font-extrabold text-orange-800 text-2xl italic">Image Gallery</span>
+  <div class="h-px w-20 bg-orange-800"></div>
+</div>
+<!-- section_1 --> 
+<div class="max-w-screen-2xl mx-auto px-4 py-16 lg:py-24 relative bg-gray-50">
+    <div class="flex flex-col md:flex-row gap-2">
+        <div class="flex flex-1 flex-col gap-2">
+            <div class="flex flex-1 flex-col">
+                <!-- img_01 --> 
+                <img class="object-cover h-full" src={Eight.src}>
+            </div>
+            <div class="hidden md:flex flex-1 flex-row gap-2">
+                <div class="flex flex-1 flex-col">
+                  <!-- img_02 --> 
+                  <img class="object-cover h-full" src={Nine.src}>
+                </div>
+                <div class="hidden md:flex flex-1 flex-col">
+                  <!-- img_03 --> 
+                  <img class="object-cover h-full" src={Two.src}>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-1 flex-col gap-2">
+            <div class="hidden md:flex flex-1 flex-row gap-2">
+                <div class="flex flex-1 flex-col">
+                  <!-- img_04 -->
+                  <img class="object-cover h-full" src={Tweleve.src}>  
+                </div>
+                <div class="hidden md:flex flex-1 flex-col">
+                  <!-- img_05 -->
+                  <img class="object-cover h-full" src={One.src}>
+                </div>
+            </div>                        
+            <div class="flex flex-1 flex-col">
+              <!-- img_06 -->
+              <img class="object-cover h-full" src={Ten.src}>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- section_2 --> 
+<div class="max-w-screen-2xl mx-auto px-4 py-16 lg:py-24 relative bg-white">
+    <div class="flex flex-col md:flex-row gap-2">
+        <div class="flex flex-1 flex-col">
+            <div class="flex flex-1 flex-col">
+                <!-- img_01 --> 
+                <img class="object-cover h-full" src={Eleven.src} alt=''>
+            </div>
+        </div>
+        <div class="flex flex-1">
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <!-- img_02 -->
+                <img class="object-cover h-full" src={Fifteen.src} alt=''>
+              </div>
+              <div>
+                <!-- img_03 -->
+                <img class="object-cover h-full" src={Seven.src} alt=''>
+              </div>
+              <div>
+                <!-- img_04 -->
+                <img class="object-cover h-full" src={Three.src} alt=''>
+              </div>
+              <div>
+                <!-- img_05 -->
+                <img class="object-cover h-full" src={Five.src} alt=''>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</Layout>

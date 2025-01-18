@@ -1,0 +1,93 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/globalStyles.css";
+import PhonebookSvg from "../assets/phonebookSvg.svg";
+import AddressSvg from "../assets/addressSvg.svg";
+import MailSvg from "../assets/mailSvg.svg";
+import TelephoneSvg from "../assets/telephone.svg";
+---
+
+<Layout>
+  <div class="flex items-center gap-4 ml-5 mt-5 justify-center">
+    <div class="h-px w-20 bg-orange-800"></div>
+    <span class="font-extrabold text-orange-800 text-2xl italic"
+      >Contact Us</span
+    >
+    <div class="h-px w-20 bg-orange-800"></div>
+  </div>
+
+  <div class="contact-root flex flex-row flex-wrap py-8">
+    <div class="contact-map w-full order-2 lg:order-1 lg:w-2/5 ">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.206036448067!2d73.85284587341998!3d18.51958916920768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1e2226b7b11%3A0xa4bb8106175ca68b!2sShaniwar%20Wada!5e0!3m2!1sen!2sin!4v1736702482472!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact-info w-full lg:w-3/5  order-1 lg:order-2  p-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <!-- Section 1 -->
+        <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+          <!-- Image Section -->
+          <div class="w-1/4 flex items-center justify-center">
+            <img src={PhonebookSvg.src} class="w-8" />
+          </div>
+          <!-- Text Section -->
+          <div class="p-2 w-3/4 flex flex-col justify-center items-center">
+            <ul>
+              <li>Mr Fernando : +917755919112</li>
+              <li>Mrs Shinde : +917755919112</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+          <!-- Image Section -->
+          <div class="w-1/4 flex items-center justify-center">
+            <img src={AddressSvg.src} class="w-8" />
+          </div>
+          <!-- Text Section -->
+          <div class="p-2 w-3/4">
+            <ul>
+              <li>Prabhavi tech park, Mahlunge</li>
+              <li>Baner, pune-47</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+          <!-- Image Section -->
+          <div class="w-1/4 flex items-center justify-center">
+            <img src={MailSvg.src} class="w-8" />
+          </div>
+          <!-- Text Section -->
+          <div class="p-2 w-3/4">
+            <ul>
+              <li>maruti.bandagar9121@gmail.com</li>
+              <li>maruti.bandagar9121@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+          <!-- Image Section -->
+          <div class="w-1/4 flex items-center justify-center">
+            <img src={TelephoneSvg.src} class="w-8" />
+          </div>
+          <!-- Text Section -->
+          <div class="p-2 w-3/4">
+            <ul>
+              <li>020-2456378</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

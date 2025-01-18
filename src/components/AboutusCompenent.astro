@@ -1,0 +1,57 @@
+---
+import HomeImage from "../assets/homeImage.png"
+import AwardCardComponent from "./AwardCardComponent.astro"
+import MeetTheTeamComponent from "./MeetTheTeamComponent.astro"
+---
+
+
+<div class="aboutus-root w-full relative">
+
+    <div class="info flex flex-col lg:flex-row px-8 flex-wrap mt-4">
+        <div class="info-text sm:w-full  lg:w-1/2 order-2 lg:order-1 flex justify-center items-center px-3">
+            <p class="py-8">
+                We envision a future where military personnel 
+                are exceptionally prepared to face any 
+                challenge with confidence and competence. 
+                By providing innovative training solutions, 
+                we aim to enhance mission readiness and 
+                operational effectiveness across all 
+                branches of the military.
+            </p>
+        </div>
+        <div class="info-img sm:w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
+            <img src={HomeImage.src} alt="" class="w-72">
+        </div>
+    </div>
+
+    <div class="about-mission mt-4">
+        <div class="flex items-center gap-4 ml-5 mt-5 justify-start">
+            <div class="h-px w-20 bg-orange-800"></div>
+            <span class="font-extrabold text-orange-800 text-2xl italic">MISSION</span>
+        </div>
+        <div class="about-mission-text px-16 my-16">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitia, necessitatibus corrupti, quam nam officiis sit in ad doloremque debitis laboriosam laudantium ullam quisquam consequuntur aspernatur eum, cupiditate ea itaque. Facere cupiditate ea non doloremque culpa officiis at ratione, maiores nobis consectetur fugit voluptatem voluptas, aliquid totam illo debitis aspernatur?
+        </div>
+    </div>
+
+    <div class="about-vision mt-4 py-8" style="background-color:rgba(174, 68, 90, 0.5);">
+        <div class="flex items-center gap-4 mr-5 mt-5 justify-end">
+            <div class="h-px w-20 bg-orange-800"></div>
+            <span class="font-extrabold text-orange-800 text-2xl italic">VISION</span>
+        </div>
+        <div class="about-vision-text px-16 my-16">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed mollitia, necessitatibus corrupti, quam nam officiis sit in ad doloremque debitis laboriosam laudantium ullam quisquam consequuntur aspernatur eum, cupiditate ea itaque. Facere cupiditate ea non doloremque culpa officiis at ratione, maiores nobis consectetur fugit voluptatem voluptas, aliquid totam illo debitis aspernatur?
+        </div>
+    </div>
+
+    <div class="about-awards-section w-full  relative -top-16 p-8 flex flex-wrap flex-row justify-between">
+        <AwardCardComponent title="Award Title" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dignissimos."/>
+        <AwardCardComponent title="Award Title" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dignissimos."/>
+        <AwardCardComponent title="Award Title" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dignissimos."/>
+        <AwardCardComponent title="Award Title" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dignissimos."/>
+    </div>
+
+    <div class="meet-the-team">
+        <MeetTheTeamComponent/>
+    </div>
+</div>
