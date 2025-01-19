@@ -1,10 +1,81 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import "../styles/globalStyles.css"
+
+import adventure1 from "../assets/gallery/adventure1.jpeg"
+import adventure2 from "../assets/gallery/adventure2.jpeg"
+import adventure3 from "../assets/gallery/adventure3.jpeg"
+import adventure4 from "../assets/gallery/adventure4.jpeg"
+import adventure5 from "../assets/gallery/adventure5.jpeg"
+import adventure6 from "../assets/gallery/adventure6.jpeg"
+
+import st1 from "../assets/gallery/st1.jpeg"
+import st2 from "../assets/gallery/st2.jpeg"
+import st3 from "../assets/gallery/st3.jpeg"
+import st4 from "../assets/gallery/st4.jpeg"
+import st5 from "../assets/gallery/st5.jpeg"
+import st6 from "../assets/gallery/st6.jpeg"
+
+import defence1 from "../assets/gallery/defence1.jpeg"
+import defence2 from "../assets/gallery/defence2.jpeg"
+import defence3 from "../assets/gallery/defence3.jpeg"
+import defence4 from "../assets/gallery/defence4.jpeg"
+import defence5 from "../assets/gallery/defence5.jpeg"
+import defence6 from "../assets/gallery/defence6.jpeg"
 ---
+
 <Layout>
     <div class="flex items-center gap-4 ml-5 mt-5 justify-center">
         <div class="h-px w-20 bg-orange-800"></div>
         <span class="font-extrabold text-orange-800 text-2xl italic">Services</span>
         <div class="h-px w-20 bg-orange-800"></div>
     </div>
+
+    <div class="services w-full">
+        <div class="one w-full p-12">
+            <h1 class="font-bold mb-2 text-3xl">Adventure Camp.</h1>
+            <p class="pl-2">At Gurukul Education, our training programs are led by professional military trainers with extensive experience and a proven track record of success in preparing individuals for defense careers. These trainers bring unmatched expertise, discipline, and a results-driven approach to every session. During adventure activities, they play a crucial role in guiding children through challenging tasks, ensuring safety while encouraging them to push their limits and build resilience. Their real-world defense knowledge and leadership skills add immense value, as they not only train participants physically but also instill mental toughness, teamwork, and problem-solving abilities. This unique mentorship ensures that participants receive holistic training that prepares them for challenges in life, whether in defense careers or personal growth.</p>
+            <div class="images-section">
+                <div class="image-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+                    <img src={adventure1.src} alt="Image 1" class="w-96 h-96">
+                    <img src={adventure2.src} alt="Image 2" class="w-96 h-96">
+                    <img src={adventure3.src} alt="Image 3" class="w-96 h-96">
+                    <img src={adventure4.src} alt="Image 4" class="w-96 h-96">
+                    <img src={adventure5.src} alt="Image 5" class="w-96 h-96">
+                    <img src={adventure6.src} alt="Image 6" class="w-96 h-96">
+                </div>
+            </div>
+        </div>
+
+        <div class="two w-full p-12">
+            <h1 class="font-bold mb-2 text-3xl">School Training.</h1>
+            <p class="pl-2">Gurukul Education’s adventure and life skills training programs provide school-going children with a unique blend of fun and holistic development. Through activities like trekking, team challenges, and survival training, children build confidence, teamwork, and leadership skills while improving physical fitness and mental resilience. These programs enhance problem-solving abilities, emotional intelligence, and interpersonal skills, fostering discipline, responsibility, and independence. They also promote environmental awareness and teach practical life skills such as first aid and decision-making under pressure. By stepping out of their comfort zones, children discover their potential, preparing them for real-world challenges with courage and confidence.</p>
+            <div class="images-section">
+                <div class="image-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+                    <img src={st1.src} alt="Image 1" class="w-96 h-96">
+                    <img src={st2.src} alt="Image 2" class="w-96 h-96">
+                    <img src={st3.src} alt="Image 3" class="w-96 h-96">
+                    <img src={st4.src} alt="Image 4" class="w-96 h-96">
+                    <img src={st5.src} alt="Image 5" class="w-96 h-96">
+                    <img src={st6.src} alt="Image 6" class="w-96 h-96">
+                </div>
+            </div>
+        </div>
+
+        <div class="two w-full p-12">
+            <h1 class="font-bold mb-2 text-3xl">Defence Training.</h1>
+            <p class="pl-2">Gurukul Education’s adventure and life skills training programs provide school-going children with a unique blend of fun and holistic development. Through activities like trekking, team challenges, and survival training, children build confidence, teamwork, and leadership skills while improving physical fitness and mental resilience. These programs enhance problem-solving abilities, emotional intelligence, and interpersonal skills, fostering discipline, responsibility, and independence. They also promote environmental awareness and teach practical life skills such as first aid and decision-making under pressure. By stepping out of their comfort zones, children discover their potential, preparing them for real-world challenges with courage and confidence.</p>
+            <div class="images-section">
+                <div class="image-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+                    <img src={defence1.src} alt="Image 1" class="w-96 h-96">
+                    <img src={defence2.src} alt="Image 2" class="w-96 h-96">
+                    <img src={defence3.src} alt="Image 3" class="w-96 h-96">
+                    <img src={defence4.src} alt="Image 4" class="w-96 h-96">
+                    <img src={defence5.src} alt="Image 5" class="w-96 h-96">
+                    <img src={defence6.src} alt="Image 6" class="w-96 h-96">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </Layout>
