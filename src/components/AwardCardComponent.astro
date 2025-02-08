@@ -1,10 +1,11 @@
 ---
 const { title, desc } = Astro.props;
-import AwardSvg from "../assets/Award.svg"
+// import AwardSvg from "../assets/Award.svg"
+import MedalImg from "../assets/medals.png"
 ---
 
 <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow w-64 py-10 mb-2">
-    <img src={AwardSvg.src} class="w-10" alt="">
+    <img src={MedalImg.src} class="w-12" alt="">
     <a href="#">
         <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-900 ">{title}</h5>
     </a>

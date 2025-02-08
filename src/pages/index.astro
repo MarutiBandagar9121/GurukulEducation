@@ -41,19 +41,23 @@ import AboutusCompenent from '../components/AboutusCompenent.astro';
 
 <style>
    .one{
-    background-image: url("../assets/militarybg.jpg");
+    background-image: url("../assets/homebg7.jpg");
     background-size: cover;
-    background-position: center 60%;
+    background-position: top;
+    background-repeat: no-repeat;
    }
    .two{
     /* clip-path: polygon(0 0,0 100%,100% 100%,70% 0); */
-    clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 50%, 70% 0);    
-    background-color:rgba(255,255,255,0.5);
+    clip-path: polygon(0 0, 0 100%, 80% 100%, 85% 50%, 70% 0);    
+    background-color:rgba(255,255,255,0.3);
    }
    .two .content{
     position: absolute;
     top:50%;
-    left:50%;
+    left:40%;
     transform: translate(-60%,-50%);
+   }
+   .content img{
+    width:350px
    }
 </style>
