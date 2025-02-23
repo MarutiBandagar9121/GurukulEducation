@@ -18,7 +18,7 @@ All commands are run from the root of the project, from a terminal:
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
 ip:147.93.97.164
-ssh -i "C:\maruti\static\sshFiles\ssh" root@147.93.97.164
+ssh -i ""C:\maruti\static\sshFiles-gurukul\ssh_gurukul.ppk"" root@147.93.97.164
 Root pass: MarutiBandagar9121@
 paraphrase: MarutiBandagar
 
