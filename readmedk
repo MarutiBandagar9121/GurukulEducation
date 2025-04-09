@@ -1,0 +1,35 @@
+application running on prod with express js via server.js on port 4000
+
+ip:147.93.97.164 :7080
+ssh -i "C:\maruti\static\sshFiles-gurukul\ssh_gurukul.ppk" root@147.93.97.164
+ssh -i "C:\maruti\static\sshFiles-gurukul\ssh" root@147.93.97.164
+Root pass: MarutiBandagar9121@
+paraphrase: MarutiBandagar
+
+application code path: /usr/local/lsws/gurukul/html/dkdeveloper
+
+admin_pass=NgBHUidWzGkCYClj
+dist path: usr/local/lsws/gurukul/html/astro
+
+
+pm2 start server.js --name dkdeveloper
+pm2 save
+pm2 startup
+
+
+creating new virtual host:
+mkdir -p conf/vhosts/dkdevelopers.co.in
+mkdir -p dkdevelopers.co.in/{public_html,logs}
+
+chown -R lsws:lsws dkdevelopers.co.in
+chmod -R 755 dkdevelopers.co.in
+
+sudo certbot certonly --webroot -w /usr/local/lsws/dkdevelopers.co.in/public_html -d dkdevelopers.co.in -d www.dkdevelopers.co.in
+
+Private Key File: /etc/letsencrypt/live/dkdevelopers.co.in/privkey.pem
+Certificate File: /etc/letsencrypt/live/dkdevelopers.co.in/fullchain.pem
+
+C:\maruti\static\deployKey-vps-dk
+ssh-keygen -t rsa -b 4096 -N "" -f "C:\maruti\static\deployKey-vps-dk\deploy"
+
+ssh -i "C:\maruti\static\deployKey-vps-dk\deploykey" root@147.93.97.164
